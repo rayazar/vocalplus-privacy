@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VocalPlus: listen to web pages, PDFs and ebooks</title>
+<meta name="description" content="VocalPlus reads web pages, PDFs, ebooks, scanned pages, emails and texts out loud, highlighting each sentence as it goes.">
+<style>
+  :root{--bg:#05060a;--bg2:#0b1430;--card:#111a2e;--line:#26345a;--fg:#f3f6ff;--mute:#9db4e6;--accent:#3b82f6;--red:#ef4444}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  a{color:#8db5ff}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px;text-decoration:none;color:var(--fg)}
+  .brand img{width:42px;height:42px;border-radius:10px}
+  nav a.l{margin-left:20px;text-decoration:none;color:var(--mute);font-weight:600}
+  .hero{text-align:center;padding:56px 0 36px}
+  h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.08;margin:0 0 14px;letter-spacing:-.5px}
+  .sub{color:var(--mute);font-size:1.2rem;max-width:640px;margin:0 auto 26px}
+  .badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .badge{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 20px;font-weight:700}
+  .soon{color:var(--mute);font-size:.95rem;margin-top:12px}
+  .shots{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:30px 0 10px}
+  .shots img{width:220px;max-width:42vw;border-radius:22px;border:1px solid var(--line);box-shadow:0 12px 40px #0008}
+  h2{font-size:1.9rem;margin:54px 0 18px;text-align:center}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:1.15rem}
+  .card p{margin:0;color:var(--mute)}
+  .price{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 30px;text-align:center;min-width:220px}
+  .plan.best{background:var(--accent);border-color:var(--accent)}
+  .plan b{font-size:2rem;display:block}
+  .fine{color:var(--mute);font-size:.9rem;text-align:center;max-width:680px;margin:16px auto 0}
+  footer{margin-top:60px;padding:28px 0 40px;border-top:1px solid var(--line);color:var(--mute);text-align:center;font-size:.95rem}
+  footer a{margin:0 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./"><img src="img/icon.png" alt="VocalPlus icon">VocalPlus</a>
+    <div><a class="l" href="../support/">Support</a><a class="l" href="https://rayazar.github.io/vocalplus-privacy/">Privacy</a></div>
+  </nav>
+
+  <section class="hero">
+    <h1>Listen to anything.</h1>
+    <p class="sub">VocalPlus reads web pages, PDFs, ebooks, scanned pages, emails and texts out loud, and highlights each sentence as it goes.</p>
+    <div class="badges"><span class="badge">App Store</span><span class="badge">Google Play</span></div>
+    <p class="soon">Coming soon.</p>
+  </section>
+
+  <div class="shots">
+    <img src="img/1.jpg" alt="VocalPlus home screen">
+    <img src="img/2.jpg" alt="Listening screen with the current sentence highlighted">
+    <img src="img/3.jpg" alt="Reading a web page aloud">
+    <img src="img/4.jpg" alt="VocalPlus Pro">
+  </div>
+
+  <h2>What you can do</h2>
+  <div class="grid">
+    <div class="card"><h3>Read web pages aloud</h3><p>Open any page in the built-in browser and tap one button. Free.</p></div>
+    <div class="card"><h3>Follow along</h3><p>Every sentence is highlighted as you listen. Tap any sentence to jump to it.</p></div>
+    <div class="card"><h3>Choose your voice</h3><p>Pick from the voices on your phone, in different accents, and hear a sample first.</p></div>
+    <div class="card"><h3>PDFs and ebooks</h3><p>PDFs (including scanned ones), EPUB ebooks and Word documents. Pro.</p></div>
+    <div class="card"><h3>Scan a page</h3><p>Take a photo of printed text, or choose a picture, and have it read to you. Pro.</p></div>
+    <div class="card"><h3>Emails and texts</h3><p>Paste a message, or share it to VocalPlus from another app. Pro.</p></div>
+  </div>
+
+  <h2>Simple pricing</h2>
+  <div class="price">
+    <div class="plan"><b>Free</b>Read web pages aloud</div>
+    <div class="plan"><b>$4.99</b>VocalPlus Pro<br>per month</div>
+    <div class="plan best"><b>$29.99</b>VocalPlus Pro<br>per year (save about 50%)</div>
+  </div>
+  <p class="fine">VocalPlus Pro is an auto-renewing subscription. Prices may vary by country. You can cancel any time in your App Store or Google Play account settings.</p>
+
+  <h2>Private by design</h2>
+  <p class="fine" style="font-size:1.05rem">Your documents and photos are read on your device. VocalPlus does not upload your files to its own servers. <a href="https://rayazar.github.io/vocalplus-privacy/">Read the privacy policy</a>.</p>
+
+  <footer>
+    <a href="../support/">Support</a>
+    <a href="https://rayazar.github.io/vocalplus-privacy/">Privacy Policy</a>
+    <a href="mailto:info@homula.com">info@homula.com</a>
+    <p>&copy; 2026 Homula. VocalPlus is a trademark of its owner. Other names belong to their owners.</p>
+  </footer>
+</div>
+</body>
+</html>
